@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.hero-container{
+    height: auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-buy{
+    background-color: rgb(82, 82, 255);
+    padding: 10px 10px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
