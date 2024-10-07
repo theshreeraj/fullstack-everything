@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.homepage-layout{
+    background-color:#f1e9fa;
+}
+
+.navbar{
+    width: 90%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.cta-primary{
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    padding: 8px 10px;
+}
+
+
+.cta-secondary{
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+}
+
+.hero-container{
+    height: 90vh;
+    background-image: url("./assets/hero-humaans.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.categories-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.card{
+    border: 1px solid black;
+    width: 50%;
+    height: 250px;
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.category-dp{
+    width: 100px;
+    height: 100px;
+}
+
+.category-dp > img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* humaans container css */
+.featured-humaan-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+align-items: center;
+    gap: 10px;
+}
+
+
+
+/* humaans card css start */
+.portfolio-card {
+    width: 28%;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* Add this to prevent overflow issues */
+}
+
+.portfolio-web > img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    display: block; /* Ensure the image is treated as a block element */
+}
+
+.user-dp {
+    position: absolute;
+    top: 180px; /* Adjust this based on the height of the banner image */
+    left: 15px; /* Adjust the left value for better positioning */
+    transform: translateY(-50%); /* To keep the image centered vertically */
+}
+
+.user-dp > img {
+    width: 60px; /* Fix the size of the profile picture */
+    height: 60px; /* Keep it proportional */
+    border-radius: 50%;
+    border: 3px solid white; /* Add a white border around the image */
+}
+
+.portfolio-content {
+    padding: 60px 10px 10px 10px; /* Adjust padding to avoid overlap */
+    text-align: left; /* Center-align content */
+}
+
+.card-btn {
+    background-color: black;
+    padding: 4px 6px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+}
+/* humaan card css ends */
