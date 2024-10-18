@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.hero-heading{
+    text-align: center;
+    font-size: 70px;
+    font-weight:normal;
+}
+
+
+.hero-gray{
+    color: rgba(20, 20, 26, 0.32);
+}
+
+
+.hero-img{
+    width: 100px;
+    height: 70px;
+    border-radius: 45px;
+    vertical-align: middle;
+}
+
+
+.project-heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight:normal;
+}
+
+.project-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img1{
+    width: 28%;
+    height: auto;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.project-img1 > img{
+    width: 50%;
+}
