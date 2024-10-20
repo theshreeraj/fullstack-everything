@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            height: 400px;
+            width: 400px;
+            margin: 50px auto;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- setTimeout -->
+    <!-- executes a same function only once in a specific interval -->
+
+    <button onclick="Start()">Start</button>
+    <button onclick="Stop()">Stop</button>
+    <div class="box1" id="box1"></div>
+
+
+    <script>
+
+
+        var br = 0;
+        function demo() {
+            // alert('hello setTimeOut');
+
+            br += 100;
+
+            document.querySelector('.box1').style.borderRadius = br + "px";
+
+        }
+
+
+
+
+        var x;
+        const Start = () => {
+            // setInterval(demo, 1000);
+
+            alert("start")
+            x = setTimeout(demo, 5000);
+        }
+
+        // *********************************************
+
+
+        const Stop = () => {
+            // clearTimeout
+
+            alert('stopped')
+            clearTimeout(x);
+
+        }
+
+
+        // ************************************************************
+
+
+        // callaback 
+        setInterval(() => {
+            alert("hello setInterval Function!!!");
+        }, 3000)
+
+
+        setTimeout(function demo() {
+            alert()
+        }, 5000)
+
+
+
+    
+    </script>
+
+</body>
+
+</html>

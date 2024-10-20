@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <!-- date object -->
+
+    <script>
+        var today = new Date();
+        console.log(today);
+
+        // separate data
+
+        console.log(today.getFullYear());//2024
+
+        // console.log(today.getMonth());//starts indexing from 0 -jan- 1-feb- 2-mar- 3-april
+        console.log(today.getMonth() + 1);//starts indexing from 0 -jan- 1-feb- 2-mar- 3-april
+
+
+        console.log(new Date().getDate());//17
+
+        console.log(today.getDay());//3
+
+        console.log(today.getHours());
+
+
+
+        // *************************************************************
+
+        // var newDate = new Date('2025 Aug 25,10:10:10');
+
+        var newDate = new Date();
+        newDate.setFullYear(2030);
+        newDate.setMonth(7);
+        newDate.setHours(18)
+        console.log(newDate);
+
+
+        // **************************************************************
+
+        // 3 Additional methods
+
+        // today.toLocaleDateString()-return only todays date
+        // today.toLocaleTimeString()-return only todays time
+        // today.toLocaleString()- return both today's datetime
+
+
+        alert(new Date());
+
+        var date = new Date();
+        alert(date.toLocaleDateString());//
+
+        alert(date.toLocaleTimeString());
+
+        alert(date.toLocaleString());
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Data types
+    
+
+        Primitive DT- Predefined data types, built in data types
+
+            int,char,float,boolean,double,long,double,
+
+        Non Primitive Data types - 
+        
+        User defined data types
+
+        Derived from Primitive dt, defined by developers
+
+
+        array object
+
+        ***************************************************
+
+        In JS
+
+
+        PDT- number,string,boolean,null,undefined,symbol,bigint,
+        NPDT- array ,object
+    
+    -->
+
+    <script>
+        let age = 20;
+        // let age = 20.5;
+        console.log(age);
+
+        // typeof op
+        console.log(typeof age);//number
+
+
+        // ******************************************************
+
+        // string - stored data or a single value  in "" or ''
+        //collection of characters
+
+        var name = "Sanket";
+        console.log(name);
+
+        console.log(typeof name);//string
+        // *************************************************************************
+
+        // boolean - true or false
+
+        var isEligible = false;
+        // alert(isEligible);
+
+        console.log(isEligible);
+        console.log(typeof isEligible);
+        // ***********************************************************************
+
+
+        // null
+        //object 
+
+        var empId = null;
+        console.log(empId);
+        console.log(typeof empId);//object i.e as per expert is a bug in a JS
+
+
+        // empty data
+
+        // var empRole="";
+        // console.log(empRole);
+        // console.log(typeof empRole)
+
+        // ******************************************************************************
+
+
+        // undefined
+        //when we declared variable but not initialized any value i.e undefined
+
+        //by default undefined
+        //return undefined
+
+        var pId;
+        console.log(pId);
+
+        console.log(typeof pId);
+
+        // *********************************************************************************
+        // symbol - calls to symbol function and values must be unique
+
+        // symbol()
+
+        var a = 20;
+        var b = 20;
+        console.log(a == b);
+
+        console.log(Symbol(a) == Symbol(b));//false
+
+
+        //  The Symbol Type
+
+        // A JavaScript Symbol is a primitive data type just like Number, String, or Boolean.
+
+        // It represents a unique "hidden" identifier that no other code can accidentally access.
+
+        // For instance, if different coders want to add a person.id property to a person object belonging 
+        // to a third - party code, they could mix each others values.
+
+        // Using Symbol() to create a unique identifiers
+
+
+        // Symbols are always unique.
+
+
+        let obj = {
+            name: 'Pratik',
+            skill: 'MERN Stack',
+        }
+
+        let id = Symbol('id');
+        obj[id] = 123456;
+
+        // try to access
+        console.log(obj);
+        // console.log(obj.id)
+
+
+
+        //BigInt
+
+        // ******************************************************************************************************
+
+        // NPDT
+        
+        // User defined data types
+        
+        // Derived from Primitive dt, defined by developers
+
+
+
+
+        // Array object
+
+        // Array
+
+        //Is a collection of similar or different type of elements
+
+        //we can stored multiple type of data in a single varaible
+        // starts indexing from 0
+
+
+
+        const arr = [100, "Nishi", true, null, undefined, [], {}];
+        console.log(arr);
+
+
+        // Array is a special type of object in a JS
+
+        // interview que
+        console.log(typeof arr);//object
+
+
+        // ******************************************************************8
+
+        // Object
+        // is a entity having methods and properties
+
+        // we can stored large amount of data
+
+        //stored data in a key value pair
+
+        const user={
+
+            // key:value
+            id:1,
+            name:'Pratik',
+            role:'MERN Stack Dev',
+            mobile:987654321,
+            isEligible:true,
+            empId:null,
+            empSkill:['HTML','CSS','React'],
+
+        }
+
+        console.log(user);
+        console.log(typeof user);
+
+
+    </script>
+
+</body>
+
+</html>
+
+

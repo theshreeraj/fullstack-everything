@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- string
+    
+
+        string is a collection of characters
+
+        Stored a single value in a " " or ''
+
+        Starts indexing from 0
+
+    -->
+
+    <script>
+
+        let str = "Front End Developer";
+        console.log(str)
+
+        //creating instance 
+
+        let str2 = new String("MERN Developer");
+        console.log(str2)
+
+
+        // *********************************************************
+
+        // Methods and Properties
+
+
+        // slice()
+        // substring()
+
+        //substr()
+        //toUpperCase()
+        //toLowerCase()
+
+        //split()
+
+        //concat
+        //replace()
+        //includes()
+
+        //trim()
+        //padStart()
+        //padEnd()
+
+
+        // spacing also including
+
+        var str3 = "MERN Stack Developer";
+        console.log(str3[0]);//M
+        console.log(str3[2])//R
+
+        // spacing also including
+        console.log(str3[5])//S
+
+
+        // **************************************
+
+        // length()
+
+        var str4 = "React JS";
+        console.log(str4.length);//8
+        // ****************************************
+
+
+        // slice()-Work on string and array
+
+        // extract part of a string
+        //return a new string
+        //-ve index allowed
+        //syntax-  slice(start,end(last index ignore))
+
+        console.log(str4.slice(2, 5));//act
+        console.log(str4.slice(2));//act JS
+
+        console.log(str4.slice(-5, -3));//ct
+
+
+        //substring(start,end)
+
+        // similar to slice()
+        //-ve index allowed
+
+        console.log(str4.substring(2, 5));//
+        console.log(str4.substring(-5, -3));//ct
+
+
+        // ********************************************
+
+        // extract part of a string
+        // syntax similar to splice
+        // substr()
+
+        // substr(start,length);
+
+        console.log(str4.substr(2, 5));//act J
+
+        console.log(str4);
+
+        // ***************************************
+
+        // toLowerCase()
+        // toUpperCase()
+
+        console.log(str4.toLowerCase())
+        console.log(str4.toUpperCase())
+
+        // **********************************************
+
+        // convert Array to String data
+
+
+        //toString()
+        //join()
+
+
+        //Convert String to Array
+        // split()
+
+        let skill = "Front End Developer";
+        console.log(skill);
+
+        console.log(skill.split());
+
+        //separate split by spacing
+
+        console.log(skill.split(''));//by character
+        console.log(skill.split(' '));//by spacing
+
+
+        // logical string reversing
+        console.log(skill.split(' ').reverse().join());
+
+        // ********************************************************************
+
+        // concat()- merging
+
+        var str6 = "ABC";
+        var str7 = "PQR";
+
+        console.log(str6 + str7)
+        console.log(`${str6} ${str7}`);
+
+
+        console.log(str7.concat(str6));//PQR ABC
+
+
+        // *************************************************************
+
+        // replace(search,replace content)
+
+        let str8 = "HTML CSS JS React JS";
+        console.log(str8);
+
+        console.log(str8.replace('JS', 'Modern JS'));
+
+        // if not present return as it is string
+        console.log(str8.replace('Bootstrap', 'Modern JS'));
+
+        // ***************************************************************
+
+
+        // includes()
+
+        console.log(str8.includes("CSS"));//true
+
+        // ************************************************************
+
+        // trim()-remove white spacing starting and ending spacing
+
+        var str9 = " MERN Stack "
+        console.log(str9);
+        console.log(str9.length);//12
+
+
+
+        //return a new string 
+
+        // remove starting and ending white spacing
+        var res1 = str9.trim();
+        console.log(res1);
+
+        console.log(res1.length);
+
+        console.log(str9);
+
+
+        //trimStart()
+        //remove leading white spacing
+
+        //trimEnd();
+
+        //remove trailing spacing
+
+        var res2 = str9.trimStart();
+        console.log(res2);//
+        console.log(res2.length);//11
+
+
+        var res3 = str9.trimEnd();
+        console.log(res3);//
+        console.log(res3.length);
+
+        // *************************************************
+
+        // padStart()- Attached a string type of data to given string to reach its maximum length
+
+        var a = "ABC";
+        console.log(a);
+
+        // console.log(a.padStart(maxlength,'fill static data'));
+
+        console.log(a.padStart(10, "#"));//#######ABC
+        console.log(a.padStart(5, "*"));//**ABC
+        console.log(a.padEnd(5, "*"));//ABC**
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

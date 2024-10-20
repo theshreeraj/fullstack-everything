@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- ways to write function -->
+
+    <!-- Normal function -->
+    <!-- Variable expression function -->
+    <!-- Anonymous  function - no name to the function -->
+    <!-- Arrow function - Modern JS -->
+
+
+    <!-- Callback function -->
+    <!-- self invoking function
+    
+        Nested function
+    -->
+
+    <script>
+
+        // normal function
+        // function A() {
+        //     console.log('Normal Function');
+        // }
+        // A();
+
+
+
+        // Variable expression- function treated like any other variable
+
+        const A = function Demo() {
+            console.log('Variable expression function')
+        }
+        // function calling
+        A();
+
+        // **********************************************************8
+
+        // Anonymous function
+
+        // no name to the function
+
+        const B = function (name, skill) {
+            console.log('Anonymous Function ');
+            return name + " " + skill;
+        }
+        var result = B('Nitesh', 'ReactJS');
+        console.log(result);
+
+        // ************************************************************************8
+
+        // Modern JS Features
+
+        //Fat Arrow function / Arrow Function / Lambda Function
+
+        //most effcient way to write function
+        //most easily writable,readable way
+
+        //we can write in a single line 
+
+        //no need to bind this keyword - by default this keyword access
+
+        //syntax
+        const Demo = () => {
+            //block of code
+            alert('Fat Arrow function in Modern JS')
+        }
+        Demo();
+
+
+        // ******************************
+
+        const X = () => console.log('Hello Modern JS');
+        X()
+
+        // ********************************
+        const Y = (a, b) => console.log(a + b);
+        Y(100, 200);
+
+        // ************************8
+        //no need of () if u have single parameter
+
+        const Z = name => console.log(name);
+        Z('Abhinav');
+
+        // *********************************
+        // return
+
+        const demo = (x, y) => { return x + y };
+        console.log(demo(100, 50));
+
+
+        // *****************************************************
+
+        // hoisting
+
+        // a = "Pratik";
+        // console.log(a);
+        // // var a;
+
+        // let a;
+        //const a;//error Cannot access 'a' before initialization
+
+
+        // 
+
+        // normal function is hoisted
+
+
+        // Demo1();
+
+        // function Demo1() {
+        //     console.log('Function Demo1 Called');
+        // }
+
+
+
+        // Demo2();
+        // Other function are not hoisted
+        const Demo2 = () => {
+            console.log('Other functions Called');
+        }
+
+
+    
+
+
+
+
+    </script>
+</body>
+
+</html>

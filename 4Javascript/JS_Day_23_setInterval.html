@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+
+        setInterval function
+
+
+        executes a same function multiple times in a specific interval
+
+        setInterval(fun,ms)
+     -->
+
+    <button onclick="StartInterval()">Start Interval</button>
+    <button onclick="stopInterval()">stop interval</button>
+
+    <img src="./teddy2.jpg" alt="" height="200px" width="300px" id="img">
+
+    <script>
+        function Demo() {
+            alert('hello Welcome To The Modern JS');
+
+        }
+
+        // Demo();
+        // setInterval(Demo,3000);
+
+
+        // **************************************8
+        var mar = 0;
+
+        const demo2 = () => {
+            // img.style.marginLeft="100px";
+            mar += 50;
+            img.style.marginLeft = mar + "px";
+        }
+
+        var x;
+        const StartInterval = () => {
+            alert('start interval')
+            x = setInterval(demo2, 1000);
+
+        }
+
+        // ******************************************8
+        // clearInterval()- to clear that set interval
+
+        const stopInterval = () => {
+            clearInterval(x);
+
+        }
+
+    </script>
+
+</body>
+
+</html>

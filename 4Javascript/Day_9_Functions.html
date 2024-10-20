@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- functions- block of code i.e bunch of Js statements
+
+
+        Reused functions mulitple times by calling that specific function 
+
+        write or defined once and reused multiple times
+
+
+        we can call a same function multiple times by passing a different arguments
+
+
+        most functions are calling on events
+
+
+        syntax
+
+        function declartion/defination
+        function fun_name()
+        {
+            //block of code//js statements
+        }
+
+        //function call
+        fun_name()
+    
+    -->
+
+    <h1 id="data"> </h1>
+
+
+    <!-- calling a function on events -->
+    <button onclick="demo()">Click here</button>
+
+    <!-- <button onclick="Colorfun()">Change Color</button> -->
+
+    <script>
+
+        document.getElementById('data').innerHTML = "Welcome TO The Function in JS";
+        alert('Hello Welcome To The Modern JS!!');
+
+
+        //function defination/declartion
+        // function demo() {
+
+        //     //block of code
+        //     document.getElementById('data').innerHTML = "Welcome TO The Function in JS";
+        //     alert('Hello Welcome To The Modern JS!!');
+        // }
+
+        // //function calling
+        // demo()
+
+        // *******************************************************
+
+        // function Colorfun() {
+        //     document.getElementById('data').style.color = "orange";
+        // }
+
+
+        // ************************************************************
+
+
+        // Addition function
+        var a = 100;
+        var b = 200;
+
+        function Sum() {
+            console.log(a + b);
+        }
+        Sum();
+
+
+        // *****************************************************8
+
+    </script>
+
+</body>
+
+</html>

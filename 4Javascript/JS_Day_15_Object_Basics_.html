@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Object
+    
+        is a entity(describe behavior and instance of a object) having methods and properties
+
+        We can stored large amount of data
+         eg.Array object, JSON format
+
+         stored data in key:value pair
+
+
+         Object is a  King of JS
+
+         i.e Everything in a JS is Object i.e JS is Object based SL
+
+
+         syntax-
+
+         const obj={
+            key:value,
+         }
+
+
+
+         Accessing Data
+
+         For Array - Number Indexing
+         For Object-Named indexing i.e key/property
+
+        
+    
+    -->
+
+    <!-- 3 ways to create Object
+    
+
+        Literal way
+        Creating instance of an object
+        Constructor way
+
+    -->
+
+    <script>
+
+        // Literal way
+        const obj = {
+            // key:value,
+            id: 1,
+            empName: 'Sanket',
+            isEligible: true,
+            empCTC: '12LPA',
+            empSkill: ['HTML', 'CSS', 'Modern JS', 'React', 'AWS'],
+        }
+
+        console.log(obj);
+        console.log(typeof obj);
+
+
+        // accessing values in object
+        console.log(obj.name);
+        console.log(obj['age'])
+
+        // **********************************************************
+
+        //creating instance of an object using 'new' keyword
+
+        const obj2 = new Object();
+
+        obj2.id = 123;
+        obj2.empName = "Nitesh";
+        obj2.empCTC = "20LPA";
+
+        console.log(obj2);
+        console.log(typeof obj2);
+
+        // **********************************************
+
+
+        // **********************************************
+
+        // constructor way ---special type of fuction or method which is used to create or initialize instance
+        // of an object
+
+
+                  // this keyword
+
+
+                    //reference variable
+                    //refer to current object
+
+                    //this- pointing / fetch current method and properties data of an object
+
+
+                    // global object
+                    console.log(this);
+
+                    // bom object- global object
+                    console.log(window);
+
+
+        function User(id, name, skill) {
+
+            //this- pointing to current method nd properties of an object
+
+            // assigned value using this
+            this.id = id;
+            this.name = name;
+            this.skill = skill;
+        }
+
+        const result = new User(234, 'Nishi', 'React');
+        console.log(result);
+
+        console.log(typeof result);
+
+        // **************************************************************************************
+
+        // we can defined Number,string, array, boolean as a Object using 'new keyword'
+
+
+        let no = 20;
+        console.log(no);//20
+        console.log(typeof no);//number
+
+
+        // number as a object
+        let no2 = new Number(30);
+        console.log(no2);
+        console.log(typeof no2);//object
+
+
+        //
+        let isEligible = true;
+        console.log(isEligible)
+        console.log(typeof isEligible);//boolean
+
+        //
+        let isEligible2 = new Boolean(false);
+        console.log(isEligible2);
+        console.log(typeof isEligible2);//object
+
+
+        //
+        var str = "MERN Stack Developer";
+        console.log(str)
+        console.log(typeof str);//string
+
+
+        var str2 = new String('React Developer');
+        console.log(str2);
+        console.log(typeof str2);
+
+
+        //array
+        var arr = [10, 20, 30, "ABC", true, null];
+        console.log(arr);
+        console.log(typeof arr);//object
+
+        var arr2 = new Array(10, 20, 30);
+        console.log(arr2)
+        console.log(typeof arr2);
+
+
+
+
+        // -----------------------------------------
+
+
+    </script>
+
+</body>
+
+</html>

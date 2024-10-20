@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- variables - identifires & containers -->
+
+    <!-- var keyword- old JS Keyword
+    
+    
+        let const - modern Js keyword
+
+
+        var
+
+    
+
+
+    -->
+
+    <h1 class="pintu"></h1>
+
+    <script>
+      // Used to declared Js variable
+
+
+      var Name = "swaraj"
+      var name = "vishal"
+      var Name1 = "sagar"
+      var name1 = 'simran'
+
+      var first_Name = "sanket"
+      
+      var firstName1 = "maya"
+      
+      var $fname = "samar"
+      var _somename = "shreeraj"
+
+
+      // notvalid
+
+    //   var @firstName = "maya"
+    //   var first name = 'dnyanesh'
+
+    //   var !fName = "chitu"
+    //  var #somename = "vishal"
+
+    //     var name3242addffdc = 'someone'
+
+
+    // console.log(name3242addffdc);
+
+
+
+
+
+
+    // var let const - scoping, declaration
+
+
+      // **********************************************************
+
+
+      // we can declared variable without initilization
+
+
+      var empRole;
+      empRole="MERN Developer";
+      console.log(empRole);
+
+      // **********************************************************
+
+      // we can redeclared variable with same name
+
+      var age = 25;
+      var age = 30;
+      console.log(age);
+
+
+      //we can update value
+
+      var skill = "ReactJS";
+      skill = "MERN Stack"
+      console.log(skill);
+
+
+      // ******************************************************
+
+      // scope-global scope
+
+      var x = 100;
+      console.log(x);//100
+      if (true) {
+          var x = 300;
+          console.log(x);//300
+      }
+      console.log(x);//300
+
+      // ******************************************************
+
+      var y=100;
+      console.log(y);//100
+
+      function demo()
+      {
+          var y=500;
+          console.log(y);//500
+      }
+      demo()
+      console.log(y);//100
+    </script>
+  </body>
+</html>

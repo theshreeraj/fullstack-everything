@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- 
+    ternary op
+    exponenetitaion Op
+    nullish coalscheing op
+
+    typeof op
+
+
+    ****************************************************
+    concatenation operator
+    NaN
+    Template Literal- -->
+
+
+    <script>
+
+        // ternary operator
+
+        // var age=15;
+
+        // take input from user
+
+        // prompt function - dialog box
+        var age = prompt('Enter Your Age', 0);
+
+        // if(age>=18)
+        // {
+        //     alert('Congrats Dear You Are Eligble!')
+        // }
+
+        // else{
+        //     alert('Sorry Come Back!')
+        // }
+
+        // ********************************************************************
+
+        // Ternary operator
+        // condition ? 'true' :'false'
+
+
+        var res = age >= 18 ? 'Congrats ' : 'Sorry You Are Not Eligble';
+        alert(res);
+
+        // ********************************************************************
+
+
+        // exponentiation operator
+
+        // **
+        //return power
+
+        var a = 5;
+        console.log(a ** 2);//5^2-25
+
+        console.log(10 ** 2);//100
+        console.log(5 ** 3);//125
+
+        // ************************************************************************
+
+        // Nullish Coalscheing Operator
+
+        // ??
+
+        //Return 1st argument if not nullish(null or undefined)
+
+        let fname = "Vaibhav";
+        let lname = "XYZ";
+
+
+        console.log(fname ?? lname);//vaibhav
+
+
+        var x = null;
+        var y = "John";
+
+        console.log(x ?? y);//john
+
+
+        // ***********************************************
+
+
+        // typeof -return data type of specific value which we initialize into that variable
+
+        console.log(typeof "ABC");//string
+        console.log(typeof null);//object
+        console.log(typeof []);//object
+        console.log(typeof {});//obj
+
+        // Most asked 
+        console.log(typeof typeof undefined);//string
+        console.log(typeof typeof "ABC");//string
+
+        // ***************************************************************
+
+
+        // concatention operator- +
+
+
+        //+ -as a concatenation op
+        //Addition operator
+        //parsing-
+
+        // to concat data
+
+        let name = "Pravin";
+        let skill = "ReactJS";
+
+        document.write("<h1>" + name + "</h1>");
+
+        document.write('Your Name Is ' + name);
+
+        document.write("<br><hr>")
+
+        document.write('<h1>Hello Dear Your Name Is ' + name + " And Your Skill Is " + skill + "</h1>");
+
+
+
+        // ************************************
+
+        // Modern JS Features to concat data
+
+        // Template Literal way
+
+        // `` - back tick symbol   -  ~-tilde
+        //${dynamic value}
+
+
+        document.write(`<h1>Hello Your Name Is <mark> ${name} </mark> And Your Skill Is ${skill}</h1>`)
+
+
+
+        // **************************************************
+
+        console.log(10+10);//20
+        console.log(10+"10");//1010
+        console.log("10"+"10");//1010
+        console.log("10"+100);//10 100
+
+
+
+        // 
+
+        console.log(10*5);//50
+        console.log(10-10);//0
+        console.log(10-"10");//0
+        console.log(10*"10");//100
+
+
+        // *********************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

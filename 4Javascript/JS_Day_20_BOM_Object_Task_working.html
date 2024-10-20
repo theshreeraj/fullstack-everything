@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- BOM - Browser Object Model -->
+
+
+
+    <button onclick="history.back()">Go Back</button>
+    <button onclick="history.forward()">Go Forward</button>
+
+    <button onclick="history.go(-1)">Directly Go</button>
+
+    <!-- ************************************************** -->
+
+    <!-- window.print() -->
+    <button onclick="window.print()">Print here</button>
+
+    <!-- window.open -->
+
+    <button onclick="window.open('https://www.amazon.in','chrome','height=200, width=400')">Open A New Window</button>
+
+    <button onclick="window.close()">Close Open Window</button>
+
+    <script>
+        // dom 
+        var doc = document;
+        console.log(doc);
+
+
+        //global object 
+        var data = window;
+        console.log(data);
+
+
+        // like global object
+        console.log(this);
+
+
+        // *********************************************************************************
+
+        // dialog boxes
+        // 
+
+        // alert()
+
+        // prompt() - Ok - Cancel -
+
+        // confirm()- Ask for confirmation- Ok Cancel
+
+
+        // ********************************************
+
+        //alert
+        //return undefined
+        // alert('Hello Alert Function');
+
+        // console.log(alert());
+        // ****************************************
+
+        // prompt()-
+        //take input data from user
+
+
+        // okay-return data
+        // cancel- return null data
+
+        // var name = window.prompt('Enter Your Name ? ', 'john');
+        // alert(name);
+        // console.log(name);
+
+        // ************************************************
+
+        // confirm-used to ask for confirmation
+        var res = window.confirm('are you sure ?')
+        console.log(res);
+
+        //okay-return true
+        //cancel-return false
+
+
+
+        // ************************************************************************
+
+        // history
+        var his = history;
+        console.log(his);
+
+
+        // history.back()
+        // history.forward()
+        // history.go(-2)
+
+        // *********************************************************
+
+        var loc = window.location;
+        console.log(loc);
+
+
+        console.log(location.hostname);
+        console.log(loc.protocol);
+        console.log(loc.port);
+        console.log(loc.pathname);
+
+
+        if(location.pathname==='/about')
+        {
+            // loc.replace()
+
+        }
+
+        // hash
+        // host
+        // hostname
+        // href
+        // origin
+        // pathname
+        // port
+
+        // ***************************************************************************************
+
+        // let data2=window.navigation;
+        // console.log(data2);
+
+        let data3 = window.navigator;
+        console.log(data3);
+
+        console.log(data3.cookieEnabled);//true
+
+        console.log(data3.appCodeName);//mozilla
+        console.log(data3.appName);//netscape
+
+        // real time app useful
+
+        //clipboard
+        //geolocation
+        //blutooth
+        //connection
+        //media devices
+
+
+
+        // ******************************************************
+
+        var data4 = screen;
+        console.log(data4);
+
+
+        console.log(data4.height)
+        console.log(data4.availHeight)//728
+
+        console.log(data4.colorDepth);
+        console.log(data4.pixelDepth);
+
+
+        // *************************************************************
+
+
+        // innerHeight
+        // outerHeight
+        // innerWidth
+        // outerWidth
+
+        console.log(`Inner Height Is ${window.innerHeight}`)
+        console.log(`Outer Height Is ${window.outerHeight}`)
+        console.log(`Inner Width Is ${window.innerWidth}`)
+        console.log(`Outer Width Is ${window.outerWidth}`)
+
+    </script>
+
+</body>
+
+</html>

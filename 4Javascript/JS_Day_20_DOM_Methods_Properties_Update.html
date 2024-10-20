@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            height: 400px;
+            width: 400px;
+            background-color: orange;
+            margin: 50px auto;
+        }
+
+
+        /* // */
+        .newbox {
+            height: 400px;
+            width: 400px;
+            background-color: pink;
+            /* border-radius: 30px; */
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--DOM Methods And Properites -->
+
+    <p id="para" class="abc xyz pqr"> Lorem ipsum <b>              dolor sit amet consectetur adipisicing elit. </b> Corrupti,
+        soluta.</p>
+
+
+    <button onclick="addClass()">Add Class</button>
+    <button onclick="removeClass()">Remove Class</button>
+    <button onclick="toggleClass()">Toggle Class</button>
+
+    <br>
+    <hr>
+    <hr>
+
+    <div class="box1" id="divbox"></div>
+
+
+    <h1 id="data2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis perspiciatis voluptate qui
+        natus? Nam deserunt adipisci esse aut error consectetur!</h1>
+
+    <hr>
+    <br>
+
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <button onclick="myFunction()">"Replace"</button>
+
+    <script>
+
+        // Properties
+        //innerHTML-return html content including spacing and inside element
+
+        //innerText-return only text content
+        //outerText-similar to innerText
+
+        //textContent- return text content including spacing and excluding inside element
+        //outerHTML-return whole html element.
+
+
+
+
+        //innerHTML-return html content including spacing and inside element
+
+        var res1 = document.getElementById('para').innerHTML;
+        console.log(res1);
+
+        // document.getElementById('para').innerHTML;
+        console.log(para.innerHTML);
+        // console.log(abc[0].innerHTML);//error
+
+
+        var res2 = document.getElementById('para').innerText;
+        console.log(res2);
+
+        var res3 = document.getElementById('para').outerText;
+        console.log(res3);
+
+
+        //textContent
+        var res4 = document.getElementById('para').textContent;
+        console.log(res4);
+
+
+        //outerHTML
+        var res5 = document.getElementById('para').outerHTML;
+        console.log(res5);
+
+
+        // ********************************************************************
+
+
+        // classList-return a collection of class list
+
+
+        var res6 = document.getElementById('para').classList;
+        console.log(res6);
+
+
+        // 3 methods
+        //add
+        //remove
+        //toggle
+
+
+        const addClass = () => {
+            document.getElementById('divbox').classList.add('newbox');
+        }
+
+
+        const removeClass = () => {
+            document.getElementById('divbox').classList.remove('newbox');
+        }
+
+
+        const toggleClass = () => {
+            document.getElementById('divbox').classList.toggle('newbox');
+
+        }
+
+        // ******************************************************************
+        // className -return a class name in a string format
+
+        var res8 = document.getElementById('para').className;
+        console.log(res8);
+
+        // ************************************************************
+
+        // attribute
+        //getAttribute
+        //setAttribute
+        //getAttributeNames
+
+        var res9 = document.getElementById('data2').getAttribute('id');
+        // var res9 = document.getElementById('data2').getAttribute('class');
+        console.log(res9);
+
+        //setAttribute
+
+        document.getElementById('data2').setAttribute('class', 'newaddedbox');
+
+        console.log(document.getElementById('data2').classList);
+
+
+
+        document.write("<br><br>")
+        // ***************************************************
+        // appendChild()
+        // replaceChild()
+
+        // hasAttribute()
+
+        //createElement()- used to html element
+        // createTextNode()-used to create content
+
+        //create html element dynmaic
+        var h1 = document.createElement('h1');
+        h1.innerText = "Hello Dynamic Heading Element";
+        document.body.appendChild(h1);
+
+        var marq = document.createElement('marquee');
+        marq.innerText = "Hello Marquee tag";
+        document.body.appendChild(marq);
+
+
+
+
+
+
+
+
+
+        function myFunction() {
+            // Select first child element:
+            const element = document.getElementById("myList").children[0];
+
+            // alert(element);
+            console.log(element)
+            // Create a new text node:
+            const newNode = document.createTextNode("Water");
+
+            // Replace the text node:
+            element.replaceChild(newNode, element.childNodes[0]);
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

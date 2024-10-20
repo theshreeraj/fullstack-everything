@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Array -collection of same or differnet type of elements 
+    
+        Array is special type of  object
+
+        PDT-number,boolean,string,null,undefined,symbol
+        NPDT-Array , object
+
+
+
+        we can stored any type of data in a single variable
+
+
+        starts indexing from 0
+        Number indexing
+
+
+
+    -->
+
+
+    <script>
+        // Creating an Array
+
+        //literal way
+        let arr = [10, 20, "Pritam", "Suraj", "Manoj", true, null, ["HTML", "CSS", "JS"]];
+
+        // *************************************
+
+        //console.log()-dev
+        //alert()
+        // document.write()
+        //document.getElementById('').innerHTML
+
+        // *************************************
+
+        console.log(arr);
+
+        //pritam
+
+        // alert(arr[2]);
+
+        console.log(arr[7]);
+
+        // **********************************************
+        //creating instance of an Array
+
+        //using new keyword
+
+        const skill = new Array("HTML", "CSS", "Bootstrap", "JS", "React");
+        console.log(skill);
+
+
+        // ******************************************************************
+
+
+        // iterating/looping
+
+        let tech = [10, 20, 30, "Modern JS", "chatGPT", "AI"];
+
+        console.log(tech);
+        console.log(tech.length);
+
+        // **************************************************************8
+
+        // for loop
+
+        // for(let i=0;i<tech.length;i++) //1 2 
+        // {
+        //  console.log(tech[i]);//10 20 30
+        // }
+
+        // **************************************************************8
+
+        //for of- iterating but return an Array values
+
+        //must iterable
+
+        // for(let x of tech)
+        // {
+        //     console.log(x);//values
+        // }
+
+
+        // ************************************************
+
+        // for in- iterating an array object and return key value data
+        // used to iterate array and object
+
+        for (let keys in tech) {
+            // console.log(keys);//index
+            // console.log(tech[keys]);//elements
+
+            console.log(keys + "  = " + tech[keys])
+        }
+
+
+        console.log("******")
+        // *****************************************************************
+
+        // create an empty array and push dynamic values from 0-50;
+
+        let no = new Array();
+        console.log(no);
+
+
+        // for(let i=0;i<=50;i++)
+        // {
+        //     // console.log(i);
+        //     no[i]=i;
+        // }
+        // console.log(no);
+
+
+        //1-50
+
+        // for(let i=1;i<=50;i++)
+        // {
+        //     no[i-1]=i;//1
+        // }
+        // console.log(no);
+
+
+        // ******************************
+
+        var x = 0;//1
+        for (let i = 1; i <= 50; i++) {
+            no[x] = i;//
+            x++;
+        }
+        console.log(no);
+
+
+
+
+
+        // *******************************************************************************
+
+
+
+        // {key:value}
+
+        //Array access -number indexing
+        // object access- Named indexing
+
+
+        const data = [100, "React", true, ["Front end", "backend", "AWS"], { name: 'Ashutosh', skill: 'MERN', tech: ["JS"] }]
+
+        console.log(data);
+
+        //React
+
+        console.log(data[1]);
+
+        //inside array
+        console.log(data[3]);
+
+        //aws
+
+        console.log(data[3][2])
+
+        // data[3[3]]
+
+
+        //object
+
+        console.log(data[4]);
+
+        //MERN value
+
+        // console.log(data[4]['skill']);
+
+        console.log(data[4].skill);
+
+
+        // JS
+
+        console.log(data[4].tech[0]);//JS
+
+
+
+
+
+
+
+
+        //
+        // Array in Object
+
+
+        // const obj={
+        //     // key:value,
+        //     name:'ABC',
+        //     emp_id:123,
+        //     skill:["HTML","CSS"]
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

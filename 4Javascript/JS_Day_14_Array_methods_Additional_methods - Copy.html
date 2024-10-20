@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- 
+    indexOf()
+    lastIndexOf()
+    at()
+
+
+    isArray()
+    sort()
+    reverse()
+    fill()
+    join()
+    toString()
+
+
+    valueOf()
+    concat()
+    
+    flat()
+
+    from()
+
+    filter ,find
+    some ,every
+    reduce -->
+
+    <!-- indexOf()-Returns the index of the first occurrence of a value in an array,  -->
+    <!-- lastIndexOf() - Returns the index of the last occurrence of a specified value in an array, or -1 if it is not present.-->
+
+    <script>
+      const arr = [100, 200, 250, 350, 450, 650, 200, 350];
+      console.log(arr);
+
+      // indexing
+      console.log(arr.indexOf(200)); //1
+
+      console.log(arr.lastIndexOf(200)); //6
+
+      console.log(arr.lastIndexOf(1000)); //-1
+
+      // *********************************************
+
+      // at()- return element from that given index
+      console.log(arr.at(3)); //350
+
+      // *******************************************************
+
+      // isArray() - it check the array or not ? return boolean value
+
+      console.log(Array.isArray(arr)); //true
+
+      console.log(Array.isArray("ABC")); //false
+      console.log(Array.isArray(200)); //false
+      console.log(Array.isArray({})); //false
+      console.log(Array.isArray([])); //true
+
+      // ***********************************************
+
+      // reverse()-reverse given array
+
+      //modified original array
+      //return new array
+
+      const data = ["Nitesh", "Nishi", "Prathmesh", "Sharad", "Abhi"];
+      console.log(data);
+
+      console.log(data.reverse());
+
+      console.log(data);
+
+      // custom logic
+      for (let i = data.length - 1; i >= 0; i--) {
+        console.log(data[i]); //Abhii
+      }
+
+      // *********************************************************************
+
+      // sort()-used to sort a given array alphabetically or ascending,decending order
+
+      const data2 = ["ABC", "John", "Peter", "Pratik", "Sanket", "Nishi", "Z"];
+      console.log(data2);
+
+      console.log(data2.sort());
+
+      // number elements
+      const data3 = [100, 150, 300, 200, 500, 800, 1000, 220, 260, 140, 60];
+
+      console.log(data3.sort()); //indexwise
+
+      // compare function
+      //it compare 2 values and return
+      //Function used to determine the order of the elements. It is expected to return
+      // a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
+      // value otherwise.
+
+      console.log(
+        data3.sort(function (a, b) {
+          return a - b;
+        })
+      );
+      console.log(
+        data3.sort(function (a, b) {
+          return b - a;
+        })
+      );
+
+      // **********************************************************
+
+      // convert given Array to string type data
+
+      // toString()-return a new string element with comma separated value
+
+      // join()- return a new string elemets with mulitiple separator
+
+      const data4 = ["HTML", "CSS", "Bootstrap", "MUI", "Tailwind"];
+      console.log(data4);
+
+      console.log(data4.toString()); //return comma separated value
+
+      console.log(data4.join()); //separated value
+
+      // add separtor
+      console.log(data4.join(" * ")); //separated value
+
+      // ****************************************************************
+
+      // fill()
+      // valueOf()
+      // includes()
+      // from()
+
+      //fill- fill start to end static element/data to the given array
+      //original modified
+      //return a new Array
+
+      const data5 = ["React", "AWS", "Angular", "VueJS", "NextJS"];
+      console.log(data5);
+
+      console.log(data5.fill("Front-End"));
+      console.log(data5);
+
+      // *************************************
+
+      // valueOf()- return array itself()
+      //by default method
+
+      const data6 = [10, 30, 40, 50, 80, 90, 140, 500, 560];
+      console.log(data6);
+      console.log(data6.valueOf()); //as it is
+
+      // ****************************************************************
+
+      // includes()- check elements is present or not and return boolean value
+
+      console.log(data6.includes(1000)); //false
+      console.log(data6.includes(500)); //true
+      // ***********************************************************************
+
+      // from method()
+      // return array from a given array  like iterable object data
+      // console.log(data7);
+
+      //Creates an array from an iterable object.
+
+      const data7 = "Pratik";
+      // const data7=[10,30,50,80];
+
+      var res = Array.from(data7); //
+      console.log(res);
+
+      // ******************************************
+
+      // keys()-return an array iterator object
+      //values()
+      // entries()
+
+      const data8 = [1000, 3000, 4000, 5000, 500, 700, 800];
+      console.log(data8);
+
+      console.log(data8.keys());
+
+      //for of-return only value
+      // for(let x of data8.keys())
+      // {
+      //     console.log(x);//retun keys
+      // }
+
+      console.log(data8.values());
+      for (let x of data8.values()) {
+        console.log(x); //retun keys
+      }
+
+      for (let x of data8.entries()) {
+        console.log(x); //retun keys
+      }
+
+      // *******************************************************************
+
+      // Array Object
+
+      // const Products=[
+      //     {
+      //         key:value
+      //         key:value
+      //         key:value
+      //         key:value
+      //         key:value
+      //     },
+
+      //     [
+
+      //     {
+
+      //     }
+      //     ]
+      // ]
+
+      // flat() - convert nested subarray into single Array
+      const Arr = [10, 20, 30, 50, [80, 90, 100], [200, 300], [1000, 100]];
+      console.log(Arr);
+
+      console.log(Arr.flat());
+      // **************************************************************************
+
+      // filter and find-It checks the condition which we passed in a function and return filtered data
+
+      //some and every()-It checks the condition which we passed in a function but return boolean value
+      // every - checks all conditions matches or not and then return
+      //some- matches with and return boolean value
+
+      //reduce- reduce all multiple values in a single value
+
+      //reduceRight()
+    </script>
+  </body>
+</html>

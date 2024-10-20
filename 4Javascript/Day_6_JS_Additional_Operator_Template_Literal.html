@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- ******************************************************************
+
+    ternary op
+    exponetiation op
+    nullish colascheing op
+    typeof 
+
+
+    concatenation op
+-->
+
+    <!-- typeof- return data type of a specified variable -->
+
+    <script>
+
+        let empId = 1234;
+        console.log(empId);
+        console.log(typeof empId);//number
+
+
+        let isELigible = true;
+        console.log(typeof isELigible);//boolean
+
+
+
+        // modern JS
+
+
+        //es20;
+
+        // nullish colaschecing op-  ?? 
+        //return 1st argument if not nullish (null or undefined)
+
+        var a = "Prathmesh";
+        var b = "Nishi";
+        console.log(a ?? b);//Prathmesh
+
+
+        //undefined
+        // var x;
+        var x = null;
+        var y = "Mahesh";
+
+        console.log(x ?? y);//Mahesh
+
+        // ****************************************************************
+
+        //
+        // exponentiation op-  **
+
+        // return power 
+        // math.pow()
+
+        console.log(2 ** 2);//4
+
+        console.log(2 ** 3);//8
+        console.log(3 ** 3);//27
+
+
+        // ************************************************************
+
+        // let age = 22;
+
+        // if(age>=18)
+        // {
+        //     alert('congrats dear!!')
+        // }
+
+        // else
+        // {
+        //     alert('sorry come back!!')
+        // }
+
+        // ************************************************************
+
+        //alterate way to write if else
+
+        // ternary op -
+
+        //syntax-  condition ? if true : false
+        let age = 23;
+
+        var result = age >= 18 ? 'Congrats Dear Your Are Eligible ' : 'Sorry You Are not eligible';
+        alert(result);
+
+
+        // **************************************************************
+
+        // concatenation operator
+
+        // +
+
+
+        // addition.
+        //concat (data mering)
+        //parsing data
+
+
+        console.log(10 + 20);//30
+        console.log(10 + "20");//1020
+        console.log("10" + 100);//10100
+        console.log(10 + 100);//110
+
+
+        // *********************************************************************
+
+
+        console.log(20 * 20);//400
+        console.log(20 - 20)//0
+
+
+        console.log(10 * "10")//100
+        console.log(10 - "10")//0
+
+
+        // ***********************************************************************************8
+        // concat data
+
+
+        let name = "Nitesh";
+        let skill = "ReactJS";
+
+        document.write("Your Name Is " + name);
+
+        document.write("<br>")
+
+        document.write("Your Skill Is " + skill + "<br>");
+
+        // 
+        document.write("Your Name Is " + name + "Your Skill Is " + skill);
+
+
+        document.write("<h1>Your Name Is  " + name + " </h1>");
+        document.write("<h1>Your Name Is  " + name + " Your Skill Is " + skill + "  </h1>");
+
+
+        // ********************************************************************
+
+
+        // template literal
+        // back tick symbol- `
+        //   Syntax   -   `{variable}`
+
+        document.write(`Your Name Is ${name} Your Skill Is ${skill}`);
+
+        document.write(`<h1>Your Name ${name} Your SKill
+             <mark> ${skill} <mark> </h1>`)
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

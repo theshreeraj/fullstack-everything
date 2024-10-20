@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- method- When we passing a function as a key/property value -->
+
+    <script>
+        const obj = {
+            id: 1,
+            empId: 1234,
+            empName: 'Abhinav',
+            empRole: 'FrontEnd Dev',
+
+            // method
+            empDetails: function () {
+                document.write(`<h1>Hello Your Name Is ${this.empName} And Your Role Is ${this.empRole}</h1>`);
+            }
+        }
+
+        console.log(obj);
+
+        // console.log(obj.empDetails);
+        console.log(obj.empDetails());
+
+
+
+        // -------------------------------------------------------
+
+        const products ={
+            p_id: 1,
+            p_name: 'Laptop',
+            p_brand :'HP',
+            p_processor : 'Intel I3',
+            p_details : {
+                pRAM : '8GB',
+                pROM : '256 SSD'
+            }
+
+        }
+
+          // Object.keys() --return keys
+          // Object.values() --return values
+          // Object.entries() -- return keys + valuse
+        
+        // console.log(products);
+        // console.log(Object.keys(products))
+        // console.log(Object.values(products))
+        // console.log(Object.entries(products))
+
+
+
+        // Iterate using for in and for of method
+
+
+        // for in
+        // for (let keys in products){
+        //     console.log(`${keys} : ${products[keys]}`);
+        // }
+
+        // for of
+        // for (let values of Object.entries(products)){
+        //     console.log(values);
+        //     }
+
+
+        //  for (let values of Object.values(products)) {
+        //         console.log(values);
+        //     }
+
+
+
+      
+
+
+        Object.getOwnPropertyNames(products)
+        // similar to keys  method
+
+
+
+
+
+        //------------------------------------
+        
+        
+
+
+
+    </script>
+
+</body>
+
+</html>

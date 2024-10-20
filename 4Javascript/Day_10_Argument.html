@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // function Mult(a = 1, b = 1, c = 1) {
+        //     console.log(a * b * c);
+        // }
+        // Mult(10, 10, 10);//1000
+        // Mult(10, 10);//100
+        // Mult();//1
+
+        // Mult(5, 5, 5, 5, 5);//125 - Js by default ignore extra values (arguments)
+
+
+        // *****************************************************************
+
+
+
+        // arguments
+
+        //Used to handle extra arguments when we pass while function calling
+
+        // used to handle extra values
+
+        //it will return whole elements
+
+
+        //it html array collection
+
+        // it doesnt return pure array
+
+        // *****************************************************************
+
+        function Addition(a = 0, b = 0, c = 0, d = 0) {
+            console.log(a + b + c + d);
+
+
+            console.log(arguments);
+
+               }
+
+
+               
+
+
+                // Addition(10, 20, 30, 40);//100
+
+                Addition(10, 20, 30, 40, 100, 200, 300, 400);//100  Js by default ignore extra values (arguments)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            // var sum = 0;
+            // for (let i = 0; i < arguments.length; i++) {
+            //     console.log(arguments[i]);
+            //     sum += arguments[i];
+            // }
+
+            // console.log(`Total Sum Is ${sum}`)
+
+
+            // *********************************************************
+
+            // modern JS
+            // for of - must be iterable
+            //return only values
+            
+            // for (let x of arguments) {
+            //     console.log(x);
+            //     sum += x;
+            // }
+            // console.log(`Total Sum Is ${sum}`)
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

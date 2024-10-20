@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        const obj = {
+            id: 1,
+            pName: 'Laptop',
+            pPrice: 50000,
+            pRAM: '8GB',
+            pROM: '1TB',
+            PFeature: {
+                processor: 'Intel',
+                graphics: 'Nvidia',
+            },
+
+            pBrand: ['Lenovo', 'HP', 'Samsung', 'MI', 'Toshiba', 'Realme', { brand1: 'HP 14S' }]
+        }
+
+
+        console.log(obj);
+
+        //  Named indexing i.e key/property
+
+        //pName
+        console.log(obj.pName);
+        console.log(obj['pName']);
+
+        // ************************************************
+
+        // we can update value
+
+        obj.pName = "Mobile";
+        console.log(obj);
+
+
+        // ************************************************
+
+        // pFeature
+        console.log(obj.PFeature);
+
+        // graphics
+        console.log(obj.PFeature.graphics)
+
+        //pBrand
+        console.log(obj.pBrand);
+
+
+        // HP
+        console.log(obj.pBrand[1]);
+
+
+        // hp brand1
+
+        console.log(obj.pBrand[6].brand1);
+
+        // *************************************************************************************
+        // Array object
+
+        const arr = [
+            {
+                id: 1,
+                name: 'Pratik',
+                skill: '',
+                mobile: '',
+                email: '',
+            },
+
+            {
+                id: 1,
+                name: 'Pratik',
+                skill: '',
+                mobile: '',
+                email: '',
+            },
+            {
+                id: 1,
+                name: 'Pratik',
+                skill: '',
+                mobile: '',
+                email: '',
+            }
+        ]
+
+        // ********************************************************************************
+
+        // Iterating
+
+        // for of - must be iterable
+        //return only values
+
+
+        // ******************************************************
+
+        const Emp = {
+            empID: 1,
+            empName: 'ABC',
+            empCTC: '10LPA',
+            empRole: 'ReactJS Dev',
+            empMobile: '987654310',
+
+            empSkill: {
+                skill1: 'AWS',
+                skill2: 'React',
+                skill3: 'React Native',
+                skill4: 'NodeJS',
+            }
+        }
+
+        console.log(Emp);
+
+
+        // **************************************************************
+
+        // for in - Used to iterate array object data
+        //return both key value data
+
+        for (let keys in Emp) {
+            // console.log(keys);//return only keys
+            // console.log(Emp[keys]);//values
+
+            console.log(keys + "  :  " + Emp[keys]);
+
+        }
+
+        // nested object
+        for (let keys in Emp.empSkill) {
+            console.log(keys + " : " + Emp.empSkill[keys]);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

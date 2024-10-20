@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Array is a collection of similar or different type of elements -->
+
+    <!-- we can stored multiple type of data /elements in a single variable -->
+
+    <!-- Array is a special type of Object In a JS -->
+
+    <!-- Accessed through Number Indexing -->
+
+    <!-- Starts indexing from 0 -->
+
+    <!-- **************************************************************************************** -->
+
+    <script>
+      // create an Array
+
+      //Literal way
+
+      const arr = [
+        "Nishi",
+        "ABC",
+        1234,
+        true,
+        null,
+        { id: 1, skill: "ReactJSF" },
+        [10, 20, 30, 40],
+      ];
+      console.log(arr);
+
+      console.log(typeof arr);
+
+      // creating instance of an Array
+      const arr2 = new Array("HTML", "ReactJS", 100, true, {}, []);
+      console.log(arr2);
+
+      console.log(typeof arr2);
+      console.log(arr2[1], "he aapla output aahe");
+
+      // **************************************************************************
+
+      // Iterating
+
+      // for
+      // for in
+      // for of
+      const data = [
+        "Iphone 13",
+        "Iphone 15 Pro Max",
+        "Samsung S23 Ultra",
+        "XIAMOI",
+        "Samsung S22",
+      ];
+      console.log(data);
+
+      //Number Indexing
+      console.log(data[1]);
+
+      // length property
+      //return length of an Array
+
+      console.log(data.length);
+
+      for (let i = 0; i < data.length; i++) {
+        console.log(data[i]); //1
+      }
+
+      // ********************************************
+
+      // for of
+
+      // must be iterable
+      //return only values
+
+      for (let x of data) {
+        console.log(x); //
+      }
+
+      // ***************************************************
+
+      // for in- Used to iterate array and Object
+      // return both key value
+
+      for (let keys in data) {
+        console.log(keys + " : " + data[keys]); //index
+      }
+
+      // ***************************************************************
+
+      // logical based
+
+      // create am empty array and pass 1 - 50 dynamic  values
+
+      const newArray = new Array();
+
+      for (let i = 0; i < 50; i++) {
+        // console.log(i);
+        newArray[i] = i + 1;
+      }
+      //   console.log(newArray);
+      // *******************************************************************
+
+      // ************************************
+      var x = 0;
+      for (let i = 1; i <= 50; i++) {
+        // x=0 1
+        //i=1 2
+        newArray[x] = i;
+        x++;
+
+        // x=1
+        // i=2
+      }
+
+      console.log(newArray);
+    </script>
+  </body>
+</html>

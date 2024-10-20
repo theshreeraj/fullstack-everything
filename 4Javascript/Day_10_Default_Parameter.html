@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--     default parameter-  passing a default values when sufficient arguments
+         are not passed while function calling
+  -->
+
+
+
+    <script>
+
+        function Addition(a, b, c) {
+            // console.log('Total Sum Is '+a+b+c);
+            console.log(`Total Sum Is ${a + b + c}`);
+        }
+        Addition(50, 50, 100);
+
+        Addition(50, 100);//NaN
+
+
+        // ***********************************************************
+        // default parameter
+
+        function Sum(a = 0, b = 0, c = 0) {
+            console.log(a + b + c);
+        }
+
+        Sum(10, 100, 200);//310
+
+        Sum(10);//10
+
+        Sum(1000, 500, 200);//
+        Sum(1000, 500);//1500
+
+
+        Sum(); //0
+
+
+        // *************************************************
+        function User(name = "John", skill = "Front End") {
+            alert(`Your Name Is : ${name} And Your Skill Is ${skill}`);
+        }
+
+        User('Nitesh', 'React')
+        User('Nitesh');
+        User();
+
+
+
+    </script>
+</body>
+
+</html>

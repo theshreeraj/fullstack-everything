@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // rest parameters
+
+        // Modern JS Features ES-6
+        //Used to handle only extra values
+        //it will return only extra/rest values
+
+        //Return pure Array
+
+        //indicate ...
+
+        //A rest parameter must be last in a parameter list.
+
+
+        function Sum(x = 0, y = 0, z = 0, ...input) {
+            console.log(x + y + z);
+
+            console.log(arguments);
+            console.log(input);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+            // for of
+            var sum = x + y + z;
+            for (let x of input) {
+                console.log(x);
+                sum += x;//sum=sum+x
+
+            }
+
+            console.log(`Total Sum Is ${sum}`);
+
+
+        }
+        // Sum(10, 10, 20);//40
+        // Sum();//0
+
+        Sum(10, 20, 10, 20, 40, 50, 100, 200);//
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="./bulb2.html"></a>
+
+    <button onclick="history.back()">Go Back</button>
+    <button onclick="history.forward()">Go Forward</button>
+
+    <button onclick="history.go(-1)">Directly Go</button>
+
+    <button onclick="window.print()">Print here</button>
+
+    <button
+      onclick="window.open('https://www.amazon.in','chrome','height=200, width=400')"
+    >
+      Open A New Window
+    </button>
+
+    <button onclick="window.close()">Close Open Window</button>
+
+    <button>Delete</button>
+
+    <script>
+      var res = window.confirm("are you sure ?");
+      console.log(res);
+
+      var loc = window.location;
+      console.log(loc);
+
+      console.log(location.hostname);
+      console.log(loc.protocol);
+      console.log(loc.port);
+      console.log(loc.pathname);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- nested function -->
+
+    <!-- nested callback -->
+
+    <script>
+
+
+        function A() {
+            console.log('Function A Called');
+
+
+            function Fname(fname) {
+                console.log('Your Fname Is ' + fname);
+            }
+
+            function Lname(callback, lname) {
+                callback("Abhishek");
+                console.log("Your Lname Is " + lname);
+            }
+            Lname(Fname, "Patil");
+
+
+        }
+
+        function B(callback) {
+            callback();
+            console.log('Function B called');
+        }
+        B(A);
+
+        // Function A Called
+        //Your Fname Is ABhishek
+        //Your Lname Is Patil
+
+        //Function B called
+
+        // ************************************************************
+
+        // nested normal function
+
+        // function X() {
+        //     function Y() {
+        //         console.log('Nested normal function called');
+        //     }
+        //     Y()
+        // }
+        // X();
+
+
+        // ********************************************
+
+        // const X = () => {
+        //     const Y = () => {
+        //         console.log('Nested Arrow function');
+        //     }
+        //     Y()
+        // }
+        // X()
+
+        // **************************************************
+
+        // Interview question
+
+        function Sum(a, b) {
+            function Add(x, y) {
+                //
+                console.log(x + y);
+            }
+            Add(a, b)
+        }
+
+        Sum(100, 200);
+
+    </script>
+
+</body>
+
+</html>

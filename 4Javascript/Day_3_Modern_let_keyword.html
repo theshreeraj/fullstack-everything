@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- let keyword- Modern JS keyword
+    
+
+    
+    
+    
+    -->
+
+    <script>
+
+        // used to declared JS variable
+        let age = 20;
+        alert(age);
+
+
+        //we can not redeclared variable with same name
+        let empId = 12345;
+        // let empId=45678;
+
+        console.log(empId);
+
+
+
+        // ***********************************************
+
+         // we can declared variable without initilization
+
+        let empRole;
+        empRole="MERN Developer";
+        console.log(empRole);
+
+
+        // ***********************************************
+
+        // we can update value
+
+        let skill = "ReactJS";
+        skill = "MERN Stack";
+        console.log(skill);
+
+
+
+        // scope-block level scope / local/ function scope- (limited to that block)
+
+        let x = 100;
+        console.log(x);//100
+
+        if (true) {
+            let x = 350;
+            console.log(x);//350
+        }
+
+        console.log(x);//100
+
+
+
+        let y=500;
+        console.log(y);//500
+
+        function demo()
+        {
+            let y=600;
+            console.log(y);//600
+        }
+
+        demo();
+
+        console.log(y);//500
+    </script>
+
+</body>
+
+</html>

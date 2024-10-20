@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- math object - to perform mathimatical operations
+     -->
+
+
+    <script>
+
+        var math = Math;
+        console.log(math);
+
+        console.log(Math.LN10);
+        console.log(Math.PI);
+        console.log(Math.SQRT2);
+
+
+        // min and max
+
+        console.log(Math.min(100, 300, 400, 50, 80, 10, 350));//10
+        console.log(Math.max(100, 300, 400, 50, 80, 10, 350));//400
+
+        const arr = [100, 300, 450, 780, 900, 100, 50, 150];
+        // console.log(Math.min(arr));//NaN
+
+
+        //spread operator -  ...- extract array values
+        console.log(Math.min(...arr));
+        console.log(Math.max(...arr));
+
+        // *******************************************************************
+
+
+        // round- return rounded value >5 -largest <0.5 - lowest
+        // floor-return nearest lowest intger value
+        // ceil- return nearest largest integer value
+
+        console.log(Math.round(33.56));//34
+        console.log(Math.round(33.80));//34
+        console.log(Math.round(45.45));//45
+
+        // 
+        console.log(Math.floor(45.45));//45
+        console.log(Math.floor(45.90));//45
+        console.log(Math.floor(-34.36));//-35
+
+
+        console.log(Math.ceil(-45.45))//-45
+        console.log(Math.ceil(-45.95))////-45
+        console.log(Math.ceil(55.89));//56
+
+
+        // fround
+        // Returns the nearest single precision float representation of a number.
+        console.log(Math.fround(34.4));
+
+
+        // **************************************************************************
+
+        // trunc remove decimal point numbers
+        console.log(Math.trunc(67.45));//67
+        console.log(Math.trunc(45.95));//45
+        console.log(Math.trunc(-45.95));//-45
+
+
+        // ****************************************************************
+
+
+        // sqrt-return sqrt of a given number
+        // cbrt -return cbrt of a given number
+        // pow- return power of a given no
+        //base power
+
+
+        console.log(Math.sqrt(25))//5
+        console.log(Math.sqrt(225))//15
+        console.log(Math.sqrt(625))//25
+        console.log(Math.sqrt(850))//25
+
+
+        console.log(Math.cbrt(27))//3
+        console.log(Math.cbrt(125))//5
+
+
+        console.log(Math.pow(2, 3));//8
+        // console.log(Math.pow(2,3));//8
+
+
+        // **- exponentiation operator
+
+        console.log(2 ** 3)//8
+        console.log(5 ** 2)//25
+
+
+
+        // **************************************************************
+
+
+
+        // to genrate a random numbers
+
+        // random()
+
+        //Returns a pseudorandom number between 0 and 1.
+        //genearte a random number between 0-1
+        console.log(Math.random());//
+
+        // 2 digit number
+        console.log(Math.random() * 100);
+
+        console.log(Math.trunc(Math.random() * 100));
+
+
+        // 4 digit otp number
+        console.log(Math.trunc(Math.random() * 10000));
+
+
+
+        // random()
+    </script>
+
+</body>
+
+</html>
