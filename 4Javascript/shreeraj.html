@@ -3,68 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculator</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .main-container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+      }
+
+      .cal-container {
+        width: 25%;
+        height: 80vh;
+        margin: auto;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .btn-container {
+        height: 70px;
+        width: 22%;
+        border: 1px solid black;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      .yellow-btn {
+        background-color: rgb(255, 175, 28);
+      }
+    </style>
   </head>
   <body>
-    <!-- switch statement in js is used to execute one block of code out of many options -->
-
-    <!-- print which day user has entered -->
-
-    <!-- Write a JavaScript program that takes a number from 1 to 3 and prints the name of a fruit. If the number is:
-
-1, it should print "Apple".
-2, it should print "Banana".
-3, it should print "Cherry". If the number is not between 1 and 3, it should print "Invalid number". -->
-
-    <script>
-      // write a if else program to check the entered number is positive negative or zero
-
-      let a = -12;
-
-      if (a > 0) {
-        console.log("Hello I am positive");
-      } else if (a == 0) {
-        console.log("Hello I am zero ");
-      } else {
-        console.log("Hello I am negative");
-      }
-
-
-
-      // take two inputs from user and make addition of two
-    </script>
-
-    <!-- <script>
-      let day = 15;
-
-      switch (day) {
-        case 1:
-          console.log("Monday");
-          break;
-
-        case 2:
-          console.log("Tuesday");
-          break;
-
-        case 3:
-          console.log("Wednesday");
-          break;
-
-        case 4:
-          console.log("Thursday");
-          break;
-
-        case 5:
-          console.log("Friday");
-          break;
-
-        case 6:
-          console.log("Saturday");
-          break;
-
-        default:
-          console.log("Invalid day");
-      }
-    </script> -->
+    <div class="main-container">
+      <div class="cal-container">
+        <div class="btn-container">AC</div>
+        <div class="btn-container">+/_</div>
+        <div class="btn-container">%</div>
+        <div class="btn-container">/</div>
+        <div class="btn-container">7</div>
+        <div class="btn-container">8</div>
+        <div class="btn-container">9</div>
+        <div class="btn-container yellow-btn">*</div>
+        <div class="btn-container">4</div>
+        <div class="btn-container">5</div>
+        <div class="btn-container">6</div>
+        <div class="btn-container yellow-btn">-</div>
+        <div class="btn-container">1</div>
+        <div class="btn-container">2</div>
+        <div class="btn-container">3</div>
+        <div class="btn-container yellow-btn">+</div>
+        <div class="btn-container">**</div>
+        <div class="btn-container">0</div>
+        <div class="btn-container">.</div>
+        <div class="btn-container">=</div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- functions- block of code i.e bunch of Js statements
 
 
@@ -36,8 +34,7 @@
     
     -->
 
-    <h1 id="data"> </h1>
-
+    <h1 id="data"></h1>
 
     <!-- calling a function on events -->
     <button onclick="demo()">Click here</button>
@@ -45,46 +42,39 @@
     <!-- <button onclick="Colorfun()">Change Color</button> -->
 
     <script>
+      document.getElementById("data").innerHTML =
+        "Welcome TO The Function in JS";
+      alert("Hello Welcome To The Modern JS!!");
 
-        document.getElementById('data').innerHTML = "Welcome TO The Function in JS";
-        alert('Hello Welcome To The Modern JS!!');
+      //function defination/declartion
+      function demo() {
+        //block of code
+        document.getElementById("data").innerHTML =
+          "Welcome TO The Function in JS";
+        alert("Hello Welcome To The Modern JS!!");
+      }
 
+      // //function calling
+      demo();
 
-        //function defination/declartion
-        // function demo() {
+      // *******************************************************
 
-        //     //block of code
-        //     document.getElementById('data').innerHTML = "Welcome TO The Function in JS";
-        //     alert('Hello Welcome To The Modern JS!!');
-        // }
+      // function Colorfun() {
+      //     document.getElementById('data').style.color = "orange";
+      // }
 
-        // //function calling
-        // demo()
+      // ************************************************************
 
-        // *******************************************************
+      // Addition function
+      var a = 100;
+      var b = 200;
 
-        // function Colorfun() {
-        //     document.getElementById('data').style.color = "orange";
-        // }
+      function Sum() {
+        console.log(a + b);
+      }
+      Sum();
 
-
-        // ************************************************************
-
-
-        // Addition function
-        var a = 100;
-        var b = 200;
-
-        function Sum() {
-            console.log(a + b);
-        }
-        Sum();
-
-
-        // *****************************************************8
-
+      // *****************************************************8
     </script>
-
-</body>
-
+  </body>
 </html>

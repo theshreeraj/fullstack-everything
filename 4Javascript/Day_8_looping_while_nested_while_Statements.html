@@ -21,26 +21,26 @@
     -->
 
     <script>
-      document.write("<h1>Hello World</h1>");
-      document.write("<h1>Hello World</h1>");
-      document.write("<h1>Hello World</h1>");
-      document.write("<h1>Hello World</h1>");
-      document.write("<h1>Hello World</h1>");
-      document.write("<h1>Hello World</h1>");
-      document.write("<h1>Hello World</h1>");
-      document.write("<h1>Hello World</h1>");
-      document.write("<h1>Hello World</h1>");
-      document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
+      // document.write("<h1>Hello World</h1>");
 
       // while statement
       // syntax
 
-      var a = 1;
+      // var a = 1;
 
-      while (a < 10) {
-        document.write("<p>Hello joshi</p>");
-        a++;
-      }
+      // while (a < 10) {
+      //   document.write("<p>Hello World</p>");
+      //   a++;
+      // }
 
       // let a = 1;
       // while (a <= 10) {
@@ -51,12 +51,19 @@
       // ******************************
       // Natural no
       // var b = 1;
-      // while (b <= 100) {
-      //     document.write(b + "\n");
-      //     b++;
+      // while (b <= 51) {
+      //   document.write(b + "\n");
+      //   b++;
       // }
 
-      document.write("<br>");
+      // var naturalNo = 1;
+
+      // while (naturalNo < 51) {
+      //   document.write(`<h2>naturalNo</h2>`);
+      //   naturalNo++;
+      // }
+
+      // document.write("<br>");
 
       // var c = 100;
       // while (c >= 1) {
@@ -72,34 +79,33 @@
       // var sum = 0;
 
       // while (x <= 50) {
+      //   if (x % 2 == 0) {
+      //     document.write(x + "\n"); //2 4
+      //     sum += x;
+      //   }
 
-      //     if (x % 2 == 0) {
-      //         document.write(x + "\n");//2 4
-      //         sum += x;
-      //     }
-
-      //     x++;
+      //   x++;
       // }
 
-      // document.write(`<h2>Total Sum is ${sum}</h2>`)
+      // document.write(`<h2>Total Sum is ${sum}</h2>`);
 
       // ************************************************************************
 
       // nested while loop
 
-      //   var a = 1;
-      //   while (a <= 10) {
-      //     document.write(`<h1>${a}</h1>`);
+      // var a = 1;
+      // while (a <= 10) {
+      //   document.write(`<h1>${a}</h1>`);
 
-      //     // nested while loop
-      //     var b = 1;
-      //     while (b <= 10) {
-      //       document.write(b + " ");
-      //       b++;
-      //     }
-
-      //     a++;
+      //   // nested while loop
+      //   var b = 1;
+      //   while (b <= 5) {
+      //     document.write(b + " ");
+      //     b++;
       //   }
+
+      //   a++;
+      // }
 
       //   // ********************************************************
       //   document.write("<hr>");
@@ -107,28 +113,33 @@
       //   document.write("<hr>");
       //   document.write("<br>");
 
-      //   document.write(
-      //     "<table border='1' width='100%' cellspacing='0' cellpadding='10'>"
-      //   );
+      document.write(
+        "<table border='1' width='100%' cellspacing='0' cellpadding='10'>"
+      );
 
-      //   let x = 2;
-      //   while (x <= 15) {
-      //     // document.write(`<h2>${x}</h2>`);
+      let x = 2;
+      while (x <= 5) {
+        // document.write(`<h2>${x}</h2>`);
 
-      //     document.write("<tr>");
-      //     let y = 1;
-      //     while (y <= 10) {
-      //       var res = x * y;
-      //       document.write(`<td>${res}</td>`);
-      //       y++;
-      //     }
+        document.write("<tr>");
+        let y = 1;
+        while (y <= 10) {
+          var res = x * y;
+          document.write(`<td>${res}</td>`);
+          y++;
+        }
 
-      //     document.write("</tr>");
+        document.write("</tr>");
 
-      //     x++;
-      //   }
+        x++;
+      }
 
-      //   document.write("</table>");
+      document.write("</table>");
+
+      for (let i = 1; i < 15; i++) {
+        document.write(i + " ");
+        // break;
+      }
     </script>
   </body>
 </html>

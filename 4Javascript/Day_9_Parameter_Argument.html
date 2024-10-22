@@ -1,68 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
-
-    <button onclick="Sum(20,30)">Click Here to Sum</button>
+  <body>
+    <!-- <button onclick="Sum(20,30)">Click Here to Sum</button> -->
     <script>
+      var a = +prompt("No1");
+      var b = +prompt("No2");
+      function Mult() {
+        alert(a * b);
+      }
+      Mult();
 
-        // var a = +prompt('No1')
-        // var b = +prompt('No2')
-        // function Mult() {
+      // // *********************************************************
 
-        //     alert(a * b)
-        // }
-        // Mult()
+      // function sum() {
+      //     alert(10 + 20);
+      // }
 
-        // // *********************************************************
+      // sum()
 
-        // function sum() {
-        //     alert(10 + 20);
-        // }
+      // ******************************************************
+      // function with parameter-
 
-        // sum()
+      // parameter- passing a values while function declartion/defination i.e parameters
 
-        // ******************************************************
-        // function with parameter-
+      // /arguments- passing a actual values when we calling a function which refer to the specific parameter
 
-        // parameter- passing a values while function declartion/defination i.e parameters
+      //parmeters
+      function Sum(a, b) {
+        console.log(a + b);
+      }
 
-        // /arguments- passing a actual values when we calling a function which refer to the specific parameter
+      // arguments- actual value
+      Sum(100, 200);
+      Sum(100, 500);
+      Sum(50, 60);
 
+      // *********************************************************************
 
-        //parmeters
-        function Sum(a, b) {
-            console.log(a + b);
-        }
+      // mult
+      // function Mult(x, y, z) {
+      //     alert(x * y * z);
+      // }
 
-        // arguments- actual value
-        Sum(100, 200);
-        Sum(100, 500);
-        Sum(50, 60);
+      // Mult(5, 5, 10);//250
+      // Mult(5, 10, 10);//250
 
-        // *********************************************************************
-
-
-        // mult
-        // function Mult(x, y, z) {
-        //     alert(x * y * z);
-        // }
-
-        // Mult(5, 5, 10);//250
-        // Mult(5, 10, 10);//250
-
-        // **********************************************************************
-
-
-
+      // **********************************************************************
     </script>
-</body>
-
+  </body>
 </html>
