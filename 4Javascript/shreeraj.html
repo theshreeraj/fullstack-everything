@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- document.getElementById.style.color -->
+
+    <!-- create a function to change the color of the given text -->
+    <!-- create a function to change the color of the box on clicking some button -->
+
+    <!-- create a two buttons and a circle on click "ON" button the circle should change its background color to yellow and onclik "OFF" button the
+     circle should change its color back to white -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
+    <title>Document</title>
     <style>
-      * {
-        padding: 0px;
-        margin: 0px;
-      }
-
-      .main-container {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-self: center;
-        align-items: center;
-      }
-
-      .cal-container {
-        width: 25%;
-        height: 80vh;
-        margin: auto;
+      #box {
+        background-color: red;
         border: 1px solid black;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+        height: 200px;
+        width: 200px;
       }
 
-      .btn-container {
-        height: 70px;
-        width: 22%;
+      #box2 {
+        background-color: white;
         border: 1px solid black;
         border-radius: 50%;
-        text-align: center;
-      }
-
-      .yellow-btn {
-        background-color: rgb(255, 175, 28);
+        height: 70px;
+        width: 70px;
       }
     </style>
   </head>
   <body>
-    <div class="main-container">
-      <div class="cal-container">
-        <div class="btn-container">AC</div>
-        <div class="btn-container">+/_</div>
-        <div class="btn-container">%</div>
-        <div class="btn-container">/</div>
-        <div class="btn-container">7</div>
-        <div class="btn-container">8</div>
-        <div class="btn-container">9</div>
-        <div class="btn-container yellow-btn">*</div>
-        <div class="btn-container">4</div>
-        <div class="btn-container">5</div>
-        <div class="btn-container">6</div>
-        <div class="btn-container yellow-btn">-</div>
-        <div class="btn-container">1</div>
-        <div class="btn-container">2</div>
-        <div class="btn-container">3</div>
-        <div class="btn-container yellow-btn">+</div>
-        <div class="btn-container">**</div>
-        <div class="btn-container">0</div>
-        <div class="btn-container">.</div>
-        <div class="btn-container">=</div>
-      </div>
-    </div>
+    <h1 id="herotext">Hello From Javascript</h1>
+    <button onclick="changeHeadingColor()">Change heading color</button>
+
+    <div id="box">123</div>
+    <button onclick="changeBackgroundColor()">Change background</button>
+
+    <div id="box2"></div>
+
+    <button onclick="on()">ON</button>
+    <button onclick="off()">OFF</button>
+
+    <script>
+      function changeHeadingColor() {
+        document.getElementById("herotext").style.color = "orange";
+      }
+
+      function changeBackgroundColor() {
+        document.getElementById("box").style.backgroundColor = "yellow";
+      }
+
+
+      function on(){
+
+      }
+
+      function off(){
+        
+      }
+    </script>
   </body>
 </html>
