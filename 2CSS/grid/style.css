@@ -1,0 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-areas: "header header header"
+    "nav main main"
+    "nav footer footer";
+}
+
+.header{
+    background-color: pink;
+    grid-area: header;
+}
+
+.nav{
+    background-color: rgb(62, 62, 62);
+    grid-area: nav;
+}
+
+.main{
+    background-color: orange;
+    grid-area: main;
+}
+
+.footer{
+    background-color: bisque;
+    grid-area: footer;
+}
+
+
+
