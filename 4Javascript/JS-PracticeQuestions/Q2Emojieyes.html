@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .emoji-face {
+            background-color: yellow;
+            width: 400px;
+            height: 350px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            align-items: flex-start;
+            padding-top: 4rem;
+        }
+
+        .eye {
+            width: 40px;
+            height: 70px;
+            border: 1px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pupil {
+            width: 18px;
+            height: 18px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji-face">
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+
+        <div>
+            <button onclick="changeEyes('sleep')">Sleep</button>
+            <button onclick="changeEyes('awake')">Awake</button>
+        </div>
+    </div>
+
+    <script>
+        function changeEyes(state) {
+            const eyes = document.querySelectorAll('.eye');
+            const pupils = document.querySelectorAll('.pupil');
+
+            if (state === 'sleep') {
+                eyes.forEach(eye => eye.style.backgroundColor = 'black');
+                pupils.forEach(pupil => pupil.style.backgroundColor = 'black');
+            } else {
+                eyes.forEach(eye => eye.style.backgroundColor = 'white');
+                pupils.forEach(pupil => pupil.style.backgroundColor = 'black');
+            }
+        }
+    </script>
+</body>
+</html>

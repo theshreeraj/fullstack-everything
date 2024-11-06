@@ -4,54 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      #container {
-        height: 60vh;
-        width: 60vw;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-      }
-
-      #circle {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 1px solid black;
-      }
-    </style>
   </head>
   <body>
-    <!-- create a circle with two buttons 1. ON Button , 2. Off Button. If user clicks on the off button the circle should change its color to gray and if user
-   click on the ON button the circle should change its color to yellow -->
-
-    <div id="container">
-      <div id="circle"></div>
-
-      <div>
-        <button onclick="bulbOn()">On</button>
-        <button onclick="bulbOff()">Off</button>
-      </div>
-    </div>
-
     <script>
-      function bulbOn() {
-        console.log("Turn on");
+      // shift, unshift
 
-        document.getElementById("circle").style.backgroundColor = "yellow";
-        document.getElementById("container").style.backgroundColor =
-          "whitesmoke";
-      }
+      // push - last element add
+      // pop - last element remove
 
-      function bulbOff() {
-        console.log("Turn off");
+      // shift - remove the first element from an array & returns the array
 
-        document.getElementById("circle").style.backgroundColor = "gray";
-        document.getElementById("container").style.backgroundColor = "black";
-      }
+      // unshift - add the first element to the array
+
+      let arr = ["motu", 3, 4, 8];
+
+      console.log(arr);
+
+      let newArr = arr.push(100);
+
+      console.log(arr);
+
+      //
     </script>
   </body>
 </html>
